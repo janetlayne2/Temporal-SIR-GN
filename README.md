@@ -10,21 +10,21 @@ Janet Layne, Justin Carpenter, Edoardo Serra, and Francesco Gullo.
 The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. 
 
 ## Usage
-From the command line:
+From the command line:\s\s
     python temporalSirgn --input filename --output filename --stop False --depth 5 --alpha 10 --clusters 10   
 
 ### Input
-Temporal SIR-GN takes in a comma separated edgelist in the form of 
-    node1 node2 timestamp 
+Temporal SIR-GN takes in a comma separated edgelist in the form of \s\s
+    node1 node2 timestamp
 
 ### Output
 
-Output will be a comma separated text file of length *n x (c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen:
+Output will be a comma separated text file of length *n x (c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen.
 
 ## Datasets
-All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:
+All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:\s\s
     node1 node2 timestamp
-with labels:
+with labels:\s\s
     src trg time
 
 
