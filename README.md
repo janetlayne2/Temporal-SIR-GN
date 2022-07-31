@@ -9,6 +9,16 @@ Janet Layne, Justin Carpenter, Edoardo Serra, and Francesco Gullo.
 
 The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. 
 
+## Citation
+If you find Temporal SIR-GN useful for your research, please consider citing the following paper:
+```bibtex
+@inproceedings{layne2023tempsirgn,
+	title={Temporal SIR-GN: Efficient and Effective Structural Representation Learning for Temporal Graphs},
+	author={Layne, Janet, Carpenter, Justin, Serra, Edoardo, and Gullo, Francesco},
+	year={2023}
+}
+```
+
 ## Usage
 From the command line:
 ```bash
