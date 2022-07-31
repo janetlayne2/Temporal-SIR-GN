@@ -10,7 +10,7 @@ Janet Layne, Justin Carpenter, Edoardo Serra, and Francesco Gullo.
 The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. 
 
 ## Usage
-From the command line:\s\s
+From the command line:
 ```bash
 python temporalSirgn --input filename --output filename --stop False --depth 5 --alpha 10 --clusters 10 
 ```  
