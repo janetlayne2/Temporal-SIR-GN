@@ -14,7 +14,7 @@ From the command line:\s\s
     python temporalSirgn --input filename --output filename --stop False --depth 5 --alpha 10 --clusters 10   
 
 ### Input
-Temporal SIR-GN takes in a comma separated edgelist in the form of \s\s
+Temporal SIR-GN takes in a comma separated edgelist in the form of <br>
     node1 node2 timestamp
 
 ### Output
@@ -22,9 +22,10 @@ Temporal SIR-GN takes in a comma separated edgelist in the form of \s\s
 Output will be a comma separated text file of length *n x (c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen.
 
 ## Datasets
-All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:\s\s
+All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:<br>
     node1 node2 timestamp
-with labels:\s\s
+
+with labels:<br>
     src trg time
 
 
