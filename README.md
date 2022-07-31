@@ -32,9 +32,9 @@ node1 node2 timestamp
 ```
 
 with labels:<br>
-```bash
-src trg time
-```
+
+    src trg time
+
 
 
 
