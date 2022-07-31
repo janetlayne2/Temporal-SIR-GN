@@ -15,7 +15,9 @@ From the command line:\s\s
 
 ### Input
 Temporal SIR-GN takes in a comma separated edgelist in the form of <br>
-        node1 node2 timestamp
+'''bash    
+ node1 node2 timestamp
+ '''
 
 ### Output
 
@@ -23,10 +25,13 @@ Output will be a comma separated text file of length *n x (c^2+c)* for a graph w
 
 ## Datasets
 All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:<br>
-        node1 node2 timestamp
+'''bash
+node1 node2 timestamp
+'''
 
 with labels:<br>
-        src trg time
-
+'''bash
+src trg time
+'''
 
 
