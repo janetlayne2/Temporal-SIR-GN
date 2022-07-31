@@ -30,7 +30,7 @@ class loader:
         for a in range(data.shape[0]):
             s=''+str(int(self.revco[a]))
             for b in range(data.shape[1]):
-                s+=' '+str(data[a,b])
+                s+=','+str(data[a,b])
             file1.write(s+"\n")
         file1.close()
             
