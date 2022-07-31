@@ -3,22 +3,29 @@
 
 This repository provides a reference implementation of **Temporal SIR-GN** as described in the paper:
 
-Temporal SIR-GN: Efficient and Effective Structural Representation Learning for Temporal Graphs
+    Temporal SIR-GN: Efficient and Effective Structural Representation Learning for Temporal Graphs
 
 Janet Layne, Justin Carpenter, Edoardo Serra, and Francesco Gullo.
 
 The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. 
 
 ## Usage
+From the command line:
+    python temporalSirgn --input filename --output filename --stop False --depth 5 --alpha 10 --clusters 10   
 
 ### Input
-
-
+Temporal SIR-GN takes in a comma separated edgelist in the form of 
+    node1 node2 timestamp 
 
 ### Output
 
-Output will be of length *n x m* for a graph with *n* vertices and *m* dimensions of the format:
+Output will be a comma separated text file of length *n x (c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen:
 
-    dim1 dim2 ... dimn
+## Datasets
+All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:
+    node1 node2 timestamp
+with labels:
+    src trg time
+
 
 
