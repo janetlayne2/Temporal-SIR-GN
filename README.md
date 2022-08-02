@@ -7,6 +7,9 @@ This repository provides a reference implementation of **Temporal SIR-GN** as de
 
 Janet Layne, Justin Carpenter, Edoardo Serra, and Francesco Gullo.
 
+<p align="center"><img src="figs/renet.png" width="500"/></p>
+
+
 The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. 
 
 ## Citation
@@ -40,14 +43,14 @@ conda install pandas numpy scipy scikit-learn
 ## Usage
 From the command line:
 ```bash
-python temporalSirgn --input --output --stop --depth --alpha --clusters  
+python temporalSirgn.py --input --output --stop --depth --alpha --clusters  
 ``` 
 
 For example:
 
 
 ```bash
-python temporalSirgn --input filename --output filename --stop False --depth 5 --alpha 10 --clusters 10 
+python temporalSirgn.py --input filename --output filename --stop False --depth 5 --alpha 10 --clusters 10 
 ```  
 
 ### Input
