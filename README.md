@@ -68,13 +68,16 @@ Output will be a comma separated text file of length *n x k=(c^2+c)* for a graph
 ## Datasets
 All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:<br>
 ```bash
+
 nodeID1, nodeID2, timestamp
+
 ```
 
 with labels:<br>
 
     src, trg, time
 
+The table below gives the recommended hyperparameters for each dataset
 
 | Dataset   | Alpha    | Clusters | Depth |
 |-------------|---------------------------------------------------------------------------|----------------|------------|
