@@ -7,7 +7,7 @@ This repository provides a reference implementation of **Temporal SIR-GN** as de
 
 Janet Layne, Justin Carpenter, Edoardo Serra, and Francesco Gullo.
 
-<p align="center"><img src="figs/renet.png" width="500"/></p>
+<p align="center"><img src="figs/temporalstructure.png" width="500"/></p>
 
 
 The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. 
