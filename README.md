@@ -61,7 +61,8 @@ nodeID1, nodeID2, timestamp
 
 ### Output
 
-Output will be a comma separated text file of length *n x k=(c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen, formatted as follows<br>:
+Output will be a comma separated text file of length *n x k=(c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen, formatted as follows: <br>
+	
 	nodeID, dim0, dim1, dim2,...,dimk
 
 
