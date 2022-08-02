@@ -40,6 +40,13 @@ conda install pandas numpy scipy scikit-learn
 ## Usage
 From the command line:
 ```bash
+python temporalSirgn --input --output --stop --depth --alpha --clusters  
+``` 
+
+For example:
+
+
+```bash
 python temporalSirgn --input filename --output filename --stop False --depth 5 --alpha 10 --clusters 10 
 ```  
 
