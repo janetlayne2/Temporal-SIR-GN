@@ -10,7 +10,7 @@ Janet Layne, Justin Carpenter, Edoardo Serra, and Francesco Gullo.
 <p align="center"><img src="figs/temporalstructure.png" width="500"/></p>
 
 
-The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. 
+The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. These representations capture the evolution of each node's structure over time. 
 
 ## Citation
 If you find Temporal SIR-GN useful for your research, please consider citing the following paper: NOTE, TO BE DETERMINED
@@ -56,25 +56,36 @@ python temporalSirgn.py --input filename --output filename --stop False --depth 
 ### Input
 Temporal SIR-GN takes in a comma separated edgelist in the form of <br>
 ```bash
-node1 node2 timestamp
+nodeID1, nodeID2, timestamp
 ```
 
 ### Output
 
 Output will be a comma separated text file of length *n x k=(c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen, formatted as follows<br>:
-	nodeID dim0 dim1 dim2...dimk
+	nodeID, dim0, dim1, dim2,...,dimk
 
 
 ## Datasets
 All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:<br>
 ```bash
-node1 node2 timestamp
+nodeID1, nodeID2, timestamp
 ```
 
 with labels:<br>
 
-    src trg time
+    src, trg, time
 
 
+| Dataset   | Alpha    | Clusters | Depth |
+|-------------|---------------------------------------------------------------------------|----------------|------------|
+| synth_0.0     | 10 |    10   |   convergence (stop = True)    |
+| synth_0.1  | 10 | 10     | convergence (stop = True)   |
+| synth_0.2  | 10 |  10  |     convergence (stop = True)  |
+| synth_0.3  |  10 |  10 |   convergence (stop = True) |
+| BrazilAir |   1  |   10     |    convergence (stop = True)  |
+| EUAir| 10 |   10   | convergence (stop = True)  |
+| USAir   |  10 |    10     |   convergence (stop = True)  |
 
+Note that BrazilAir, EUAir, and USAir are large, and thus can be found in the following public Google Drive: <br>
 
+https://drive.google.com/drive/folders/1a5uI6lIEBR3oUUU586ZQM-nJCb8pZkpg?usp=sharing
