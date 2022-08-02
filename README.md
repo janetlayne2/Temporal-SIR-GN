@@ -19,6 +19,9 @@ If you find Temporal SIR-GN useful for your research, please consider citing the
 }
 ```
 
+## Environment
+Assumes python 3 with pandas, numpy, scipy, and scikitlearn
+
 ## Usage
 From the command line:
 ```bash
@@ -33,7 +36,9 @@ node1 node2 timestamp
 
 ### Output
 
-Output will be a comma separated text file of length *n x (c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen.
+Output will be a comma separated text file of length *n x k=(c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen, formatted as follows<br>:
+	nodeID dim0 dim1 dim2...dimk
+
 
 ## Datasets
 All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:<br>
