@@ -34,7 +34,7 @@ conda config --env --add channels conda-forge
 # The actual install command
 conda install pandas numpy scipy scikit-learn
 
-'''
+```
 
 
 ## Usage
