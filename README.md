@@ -25,7 +25,7 @@ Required packages: pandas, numpy, scikitlearn, scipy
 pip install pandas numpy scipy scikit-learn
 
 ```  
-Alternatively, you can create an environment with these requirements:
+Alternatively, create an environment with these requirements:
 ```bash
 conda create -n my-env
 conda activate my-env
@@ -33,6 +33,7 @@ conda activate my-env
 conda config --env --add channels conda-forge
 # The actual install command
 conda install pandas numpy scipy scikit-learn
+
 '''
 
 
