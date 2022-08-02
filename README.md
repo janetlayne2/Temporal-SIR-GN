@@ -20,7 +20,21 @@ If you find Temporal SIR-GN useful for your research, please consider citing the
 ```
 
 ## Environment
-Assumes python 3 with pandas, numpy, scipy, and scikitlearn
+Required packages: pandas, numpy, scikitlearn, scipy
+```bash
+pip install pandas numpy scipy scikit-learn
+
+```  
+Alternatively, you can create an environment with these requirements:
+```bash
+conda create -n my-env
+conda activate my-env
+# If you want to install from conda-forge
+conda config --env --add channels conda-forge
+# The actual install command
+conda install pandas numpy scipy scikit-learn
+'''
+
 
 ## Usage
 From the command line:
