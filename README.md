@@ -54,7 +54,7 @@ python temporalSirgn.py --input filename --output filename --stop False --depth 
 ```  
 
 ### Input
-Temporal SIR-GN takes in a comma separated edgelist in the form of <br>
+Temporal SIR-GN takes in a comma separated edgelist with headers in the form of <br>
 ```bash
 nodeID1, nodeID2, timestamp
 ```
