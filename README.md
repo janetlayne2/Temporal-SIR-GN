@@ -50,7 +50,7 @@ For example:
 
 
 ```bash
-python temporalSirgn.py --input filename --output filename --stop False --depth 5 --alpha 10 --clusters 10 
+python temporalSirgn.py --input filename --output filename --stop --depth 5 --alpha 10 --clusters 10 
 ```  
 
 ### Input
