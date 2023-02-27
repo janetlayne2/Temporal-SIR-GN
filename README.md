@@ -90,6 +90,8 @@ The table below gives the recommended hyperparameters for each dataset
 | EUAir| 10 |   10   | convergence (stop = True)  |
 | USAir   |  10 |    10     |   convergence (stop = True)  |
 
-Note that BrazilAir, EUAir, and USAir are large, and thus can be found in the following public Google Drive: <br>
+Note that BrazilAir, EUAir, USAir, and AS are too large for Github, and thus can be found in the following public Google Drive: <br>
 
 https://drive.google.com/drive/folders/1a5uI6lIEBR3oUUU586ZQM-nJCb8pZkpg?usp=sharing
+
+For the extremely large GDELT dataset, we refer to the AWS S3 bucket download instructions available here: https://github.com/amazon-science/tgl
