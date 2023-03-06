@@ -8,7 +8,7 @@ import directed_loader
 import random
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Directed Temporal SirGN')
+    parser = argparse.ArgumentParser(description='Directed Temporal SIRGN')
     parser.add_argument("--input", type=str, default="Data/synth_0.0.txt",
             help="Input graph path")
     parser.add_argument("--output", type=str, default='emb/synth0emb.txt',
@@ -126,7 +126,7 @@ def getnumber(emb):
     
 def main(args):
    data = pd.read_csv(args.input)
-   l = directed_loader.loader()
+   l = directed_loader.directed_loader()
    l.read(data)
 
    if args.stop:
