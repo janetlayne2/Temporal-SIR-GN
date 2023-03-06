@@ -78,7 +78,7 @@ with labels:<br>
 
     src, trg, time
 
-The table below gives the recommended hyperparameters for each dataset
+The table below gives the recommended hyperparameters for each dataset used in node classification tasks
 
 | Dataset   | Alpha    | Clusters | Depth |
 |-------------|---------------------------------------------------------------------------|----------------|------------|
@@ -89,6 +89,10 @@ The table below gives the recommended hyperparameters for each dataset
 | BrazilAir |   1  |   10     |    convergence (stop = True)  |
 | EUAir| 10 |   10   | convergence (stop = True)  |
 | USAir   |  10 |    10     |   convergence (stop = True)  |
+| DPPIN Tarrasov   | 1E4   | 10   | convergence (stop = True)   |
+| High School   | x  | x  | convergence (stop = True)   |
+| Hospital   | x | x | convergence (stop = True)   |
+| Bitcoin OTC | x | x | convergence ( stop = True) 
 
 Note that BrazilAir, EUAir, USAir, and AS are too large for Github, and thus can be found in the following public Google Drive: <br>
 
