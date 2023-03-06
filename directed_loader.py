@@ -21,7 +21,7 @@ class directed_loader:
         for a in range(x.shape[0]):
             i=self.nodeID(x[a,0])
             j=self.nodeID(x[a,1])
-            self.addEdge((i,j,float(x[a,3])))
+            self.addEdge((i,j,float(x[a,2])))
         self.fixG()
         
     def storeEmb(self,file,data):
