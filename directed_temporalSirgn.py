@@ -4,7 +4,7 @@ import numpy as np
 import scipy as sp
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import MinMaxScaler,StandardScaler
-import loader
+import directed_loader
 import random
 
 def parse_args():
@@ -126,7 +126,7 @@ def getnumber(emb):
     
 def main(args):
    data = pd.read_csv(args.input)
-   l = loader.loader()
+   l = directed_loader.loader()
    l.read(data)
 
    if args.stop:
