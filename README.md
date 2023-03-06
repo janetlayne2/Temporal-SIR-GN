@@ -41,6 +41,9 @@ conda install pandas numpy scipy scikit-learn
 
 
 ## Usage
+
+### Undirected Graphs
+
 From the command line:
 ```bash
 python temporalSirgn.py --input --output --stop --depth --alpha --clusters  
@@ -53,6 +56,20 @@ For example:
 python temporalSirgn.py --input filename --output filename --stop --depth 5 --alpha 10 --clusters 10 
 ```  
 
+### Directed Graphs
+
+From the command line:
+```bash
+python directed_temporalSirgn.py --input --output --stop --depth --alpha --clusters  
+``` 
+
+For example:
+
+
+```bash
+python directed_temporalSirgn.py --input filename --output filename --stop --depth 5 --alpha 10 --clusters 10 
+```  
+
 ### Input
 Temporal SIR-GN takes in a comma separated edgelist with headers in the form of <br>
 ```bash
@@ -61,13 +78,13 @@ nodeID1, nodeID2, timestamp
 
 ### Output
 
-Output will be a comma separated text file of length *n x k=(c^2+c)* for a graph with *n* vertices, where *c* is the number of clusters chosen, formatted as follows: <br>
+Output will be a comma separated text file of shape *n x k=(c^2+c)* for an (undirected) graph with *n* vertices, where *c* is the number of clusters chosen, formatted as follows: <br>
 	
 	nodeID, dim0, dim1, dim2,...,dimk
 
 
 ## Datasets
-All datasets are undirected, but do not have a reverse edge. The preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:<br>
+Undirected datasets do not have a reverse edge, however, the preprocessing from loader.py generates an adjacency list with a reverse edge. Datasets are of the form:<br>
 ```bash
 
 nodeID1, nodeID2, timestamp
@@ -92,7 +109,7 @@ The table below gives the recommended hyperparameters for each dataset used in n
 | DPPIN Tarrasov   | 1E4   | 10   | convergence (stop = True)   |
 | High School   | x  | x  | convergence (stop = True)   |
 | Hospital   | x | x | convergence (stop = True)   |
-| Bitcoin OTC | x | x | convergence ( stop = True) 
+| Bitcoin OTC (directed) | x | x | convergence ( stop = True) 
 
 Note that BrazilAir, EUAir, USAir, and AS are too large for Github, and thus can be found in the following public Google Drive: <br>
 
