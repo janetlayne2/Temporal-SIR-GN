@@ -107,9 +107,10 @@ The table below gives the recommended hyperparameters for each dataset used in n
 | EUAir| 10 |   10   | convergence (stop = True)  |
 | USAir   |  10 |    10     |   convergence (stop = True)  |
 | DPPIN Tarrasov   | 1E4   | 10   | convergence (stop = True)   |
-| High School   | x  | x  | convergence (stop = True)   |
-| Hospital   | x | x | convergence (stop = True)   |
-| Bitcoin OTC (directed) | x | x | convergence ( stop = True) 
+| High School   | 1E-8  | 10  | convergence (stop = True)   |
+| Hospital   | 1E5 | 10 | convergence (stop = True)   |
+| Bitcoin OTC (directed) | 1E6 | 11 | convergence (stop = True) |
+|GDELT   | 1 | 10 | convergence (stop = True)
 
 Note that BrazilAir, EUAir, USAir, and AS are too large for Github, and thus can be found in the following public Google Drive: <br>
 
