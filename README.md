@@ -71,7 +71,7 @@ python directed_temporalSirgn.py --input filename --output filename --stop --dep
 ```  
 
 ### Input
-Temporal SIR-GN takes in a comma separated edgelist with headers in the form of <br>
+Temporal SIR-GN takes in a comma separated edgelist (with header) in the form of <br>
 ```bash
 nodeID1, nodeID2, timestamp
 ```
@@ -91,7 +91,7 @@ nodeID1, nodeID2, timestamp
 
 ```
 
-with labels:<br>
+with header:<br>
 
     src, trg, time
 
