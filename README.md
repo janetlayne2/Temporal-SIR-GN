@@ -10,15 +10,17 @@ Janet Layne, Justin Carpenter, Edoardo Serra, and Francesco Gullo.
 <p align="center"><img src="figs/temporalstructure.png" width="500"/></p>
 
 
-The Temporal SIR-GN algorithm generates structural node representations for an undirected, temporal graph. These representations capture the evolution of each node's structure over time. 
+The Temporal SIR-GN algorithm generates temporal structural node representations for a dynamic graph. These representations capture the evolution of each node's structure over time. Temporal SIR-GN has demonstrated superior scalability and performance on a diversity of datasets compared to existing state of the art algorithms.
 
 ## Citation
-If you find Temporal SIR-GN useful for your research, please consider citing the following paper: NOTE, TO BE DETERMINED
+If you find Temporal SIR-GN useful for your research, please cite the following paper:
 ```bibtex
 @inproceedings{layne2023tempsirgn,
-	title={Temporal SIR-GN: Efficient and Effective Structural Representation Learning for Temporal Graphs},
-	author={Layne, Janet, Carpenter, Justin, Serra, Edoardo, and Gullo, Francesco},
-	year={2023}
+	author = {Layne, Janet, Carpenter, Justin, Serra, Edoardo, and Gullo, Francesco},
+	title = {Temporal SIR-GN: Efficient and Effective Structural Representation Learning for Temporal Graphs},
+	booktitle = {pvldb}
+	pages = {2075-2089}
+	year = {2023}
 }
 ```
 
@@ -78,7 +80,7 @@ nodeID1, nodeID2, timestamp
 
 ### Output
 
-Output will be a comma separated text file of shape *n x k=(c^2+c)* for an (undirected) graph with *n* vertices, where *c* is the number of clusters chosen, formatted as follows: <br>
+Output will be a comma separated text file of shape *n x k=(c^2+c)* for an (undirected) graph with *n* vertices (double for directed graphs), where *c* is the number of clusters chosen, formatted as follows: <br>
 	
 	nodeID, dim0, dim1, dim2,...,dimk
 
@@ -112,7 +114,7 @@ The table below gives the recommended hyperparameters for each dataset used in n
 | Bitcoin OTC (directed) | 1E6 | 11 | convergence (stop = True) |
 |GDELT   | 1 | 10 | convergence (stop = True)
 
-Note that BrazilAir, EUAir, USAir, and AS are too large for Github, and thus can be found in the following public Google Drive: <br>
+Note that BrazilAir, EUAir, USAir, and AS are too large for github, and can be found in the following public Google Drive: <br>
 
 https://drive.google.com/drive/folders/1a5uI6lIEBR3oUUU586ZQM-nJCb8pZkpg?usp=sharing
 
