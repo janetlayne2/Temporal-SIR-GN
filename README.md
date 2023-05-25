@@ -15,11 +15,13 @@ The Temporal SIR-GN algorithm generates temporal structural node representations
 ## Citation
 If you find Temporal SIR-GN useful for your research, please cite the following paper:
 ```bibtex
-@inproceedings{layne2023tempsirgn,
+@article{DBLP:journals/pvldb/LayneCSG23,
 	author = {Layne, Janet, Carpenter, Justin, Serra, Edoardo, and Gullo, Francesco},
 	title = {Temporal SIR-GN: Efficient and Effective Structural Representation Learning for Temporal Graphs},
-	booktitle = {pvldb}
-	pages = {2075-2089}
+	journal = {Proc. {VLDB} Endow.},
+	volume = {16},
+	number = {9},
+	pages = {2075--2089},
 	year = {2023}
 }
 ```
